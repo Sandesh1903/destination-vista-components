@@ -124,39 +124,3 @@ const Sidebar: React.FC = () => {
 };
 
 export default Sidebar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import { Nav } from 'react-bootstrap';
-
-// function Sidebar() {
-//   return (
-//     <div className="bg-dark text-white vh-100">
-//       <Nav className="flex-column p-3">
-//         <Nav.Link href="#" className="text-white">Dashboard</Nav.Link>
-//         <Nav.Link href="#" className="text-white">Settings</Nav.Link>
-//         <Nav.Link href="#" className="text-white">Profile</Nav.Link>
-//         <Nav.Link href="#" className="text-white">Messages</Nav.Link>
-//         <Nav.Link href="#" className="text-white">Logout</Nav.Link>
-//       </Nav>
-//     </div>
-//   );
-// }
-
-// export default Sidebar;

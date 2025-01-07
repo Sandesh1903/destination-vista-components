@@ -45,35 +45,3 @@ const DashboardContent = () => {
 };
 
 export default DashboardContent;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-
-// function DashboardContent() {
-//   return (
-//     <div className="p-4">
-//       <h1>Main Content Area</h1>
-//       <p>This is where your main content will go.</p>
-//     </div>
-//   );
-// }
-
-// export default DashboardContent;
