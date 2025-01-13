@@ -7,7 +7,7 @@ const DashboardContent = () => {
     <div className="content p-4 w-100" style={{ backgroundColor: "#f8f9fa" }}>
       
 
-      {/* Stats Cards */}
+      
       <Row className="g-3 mb-4">
         <Col md={3}>
           <Card className="text-center p-3">
@@ -35,7 +35,7 @@ const DashboardContent = () => {
         </Col>
       </Row>
 
-      {/* Revenue Overview */}
+      
       <Card className="p-4">
         <h5>Revenue Overview</h5>
         <RevenueChart />

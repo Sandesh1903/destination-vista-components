@@ -8,7 +8,7 @@ const Searchbar = () => {
           type="text"
           className="form-control me-3"
           placeholder="Search..."
-          style={{ maxWidth: "300px" }} // Adjust the width as needed
+          style={{ maxWidth: "300px" }} 
         />
         <div>
           <i

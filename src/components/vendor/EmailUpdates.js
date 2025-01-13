@@ -21,7 +21,7 @@ const EmailUpdates = () => {
     },
   ]);
 
-  // Toggle star status
+  
   const toggleStar = (id) => {
     setEmails(
       emails.map((email) =>
@@ -30,7 +30,7 @@ const EmailUpdates = () => {
     );
   };
 
-  // Delete email
+  
   const deleteEmail = (id) => {
     setEmails(emails.filter((email) => email.id !== id));
   };

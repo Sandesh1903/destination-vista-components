@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SendBills = () => {
-  // Sample data for the bills
+  
   const bills = [
     {
       title: "March 2024 Commission",
@@ -35,21 +35,21 @@ const SendBills = () => {
               key={index}
               className="d-flex justify-content-between align-items-center py-3 border-bottom"
             >
-              {/* Bill Details */}
+              
               <div>
                 <h6 className="mb-1">{bill.title}</h6>
                 <small className="text-muted">Due: {bill.dueDate}</small>
               </div>
 
-              {/* Status */}
+              
               <div className={`badge bg-${bill.statusColor} px-3 py-2`}>
                 {bill.status}
               </div>
 
-              {/* Amount */}
+              
               <div className="fw-bold">{bill.amount}</div>
 
-              {/* Download Icon */}
+              
               <div>
                 <i className="bi bi-download fs-5"></i>
               </div>

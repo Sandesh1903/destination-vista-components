@@ -1,9 +1,9 @@
-// App.js
+
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const VendorOperations = () => {
-  // Sample data for the vendor list
+  
   const vendorData = [
     {
       name: "Travel Express Ltd",
@@ -27,7 +27,7 @@ const VendorOperations = () => {
       </div>
       
       <div className="row">
-        {/* KPI Cards */}
+        
         <div className="col-md-3">
           <div className="card text-center">
             <div className="card-body">
@@ -62,7 +62,7 @@ const VendorOperations = () => {
         </div>
       </div>
 
-      {/* Vendor List */}
+      
       <div className="mt-5">
         <h4>Vendor List</h4>
         <table className="table table-striped mt-3">

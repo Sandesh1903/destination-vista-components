@@ -10,7 +10,7 @@ const Wallet = () => {
 
   return (
     <div className="container mt-5">
-      {/* Wallet Summary Section */}
+      
       <div className="card shadow-sm mb-4">
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-center mb-4">
@@ -20,9 +20,9 @@ const Wallet = () => {
             </button>
           </div>
 
-          {/* Summary Cards */}
+          
           <div className="row">
-            {/* Balance */}
+            
             <div className="col-md-4 mb-3">
               <div className="card bg-light border-0">
                 <div className="card-body text-center">
@@ -32,7 +32,7 @@ const Wallet = () => {
               </div>
             </div>
 
-            {/* Income */}
+            
             <div className="col-md-4 mb-3">
               <div className="card bg-light border-0">
                 <div className="card-body text-center">
@@ -44,7 +44,7 @@ const Wallet = () => {
               </div>
             </div>
 
-            {/* Expenses */}
+            
             <div className="col-md-4 mb-3">
               <div className="card bg-light border-0">
                 <div className="card-body text-center">
@@ -59,7 +59,7 @@ const Wallet = () => {
         </div>
       </div>
 
-      {/* Recent Transactions Section */}
+      
       <div className="card shadow-sm">
         <div className="card-body">
           <h5 className="mb-0">Recent Transactions</h5>

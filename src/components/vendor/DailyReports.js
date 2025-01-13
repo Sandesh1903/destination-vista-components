@@ -12,9 +12,9 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
-// Register ChartJS modules
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -27,7 +27,7 @@ ChartJS.register(
 );
 
 const DailyReports = () => {
-  // Data for the bar chart (Daily Trips)
+  
   const barData = {
     labels: ["2024-03-01", "2024-03-02", "2024-03-03", "2024-03-04", "2024-03-05"],
     datasets: [
@@ -39,7 +39,7 @@ const DailyReports = () => {
     ],
   };
 
-  // Data for the line chart (Daily Revenue)
+  
   const lineData = {
     labels: ["2024-03-01", "2024-03-02", "2024-03-03", "2024-03-04", "2024-03-05"],
     datasets: [
@@ -49,17 +49,17 @@ const DailyReports = () => {
         borderColor: "#4CAF50",
         backgroundColor: "rgba(76, 175, 80, 0.2)",
         fill: true,
-        tension: 0.4, // Smooth curve
+        tension: 0.4, 
       },
     ],
   };
 
-  // Options for the bar chart
+  
   const barOptions = {
     responsive: true,
     plugins: {
       legend: {
-        display: false, // Hide legend
+        display: false, 
       },
     },
     scales: {
@@ -69,12 +69,12 @@ const DailyReports = () => {
     },
   };
 
-  // Options for the line chart
+  
   const lineOptions = {
     responsive: true,
     plugins: {
       legend: {
-        position: "top", // Show legend at the top
+        position: "top", 
       },
     },
     scales: {
@@ -88,7 +88,7 @@ const DailyReports = () => {
     <div className="container mt-5">
       <h2 className="mb-4">Daily Reports</h2>
       <div className="row">
-        {/* Bar Chart */}
+        
         <div className="col-md-6 mb-4">
           <div className="card shadow-sm">
             <div className="card-body">
@@ -98,7 +98,7 @@ const DailyReports = () => {
           </div>
         </div>
 
-        {/* Line Chart */}
+        
         <div className="col-md-6 mb-4">
           <div className="card shadow-sm">
             <div className="card-body">

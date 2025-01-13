@@ -11,7 +11,7 @@ import {
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const RevenueStatistics = () => {
-  // Data for the pie chart
+  
   const pieData = {
     labels: ["Adventure Tours", "Beach Packages", "City Tours", "Mountain Treks"],
     datasets: [
@@ -24,7 +24,7 @@ const RevenueStatistics = () => {
     ],
   };
 
-  // Performance details
+  
   const performanceData = [
     { name: "Adventure Tours", revenue: "$45,000", trend: "up" },
     { name: "Beach Packages", revenue: "$35,000", trend: "down" },
@@ -32,7 +32,7 @@ const RevenueStatistics = () => {
     { name: "Mountain Treks", revenue: "$15,000", trend: "down" },
   ];
 
-  // Function to render the trend icon
+  
   const renderTrendIcon = (trend) => {
     if (trend === "up") {
       return <i className="bi bi-arrow-up text-success"></i>;
@@ -50,7 +50,7 @@ const RevenueStatistics = () => {
           <i className="bi bi-currency-dollar text-success fs-3"></i>
         </div>
         <div className="card-body row">
-          {/* Pie Chart Section */}
+          
           <div className="col-md-6 d-flex flex-column align-items-center">
             <h6 className="mb-3">Revenue by Package Type</h6>
             <div style={{ width: "80%" }}>
@@ -58,7 +58,7 @@ const RevenueStatistics = () => {
             </div>
           </div>
 
-          {/* Performance Section */}
+          
           <div className="col-md-6">
             <h6>Package Performance</h6>
             <ul className="list-group">

@@ -5,7 +5,7 @@ const ChatInterface = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
-  // Handle sending a message
+  
   const handleSend = () => {
     if (input.trim() !== "") {
       setMessages([...messages, { text: input, sender: "user" }]);

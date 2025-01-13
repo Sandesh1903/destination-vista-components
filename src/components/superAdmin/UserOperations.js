@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const UserOperations = () => {
-  // Sample data for the user list
+  
   const userData = [
     {
       name: "John Doe",
@@ -47,7 +47,7 @@ const UserOperations = () => {
       </div>
 
       <div className="row">
-        {/* KPI Cards */}
+        
         <div className="col-md-3">
           <div className="card text-center">
             <div className="card-body">
@@ -82,7 +82,7 @@ const UserOperations = () => {
         </div>
       </div>
 
-      {/* User List */}
+      
       <div className="mt-5">
         <h4>User List</h4>
         <table className="table table-striped mt-3">
@@ -120,7 +120,7 @@ const UserOperations = () => {
         </table>
       </div>
 
-      {/* Modal */}
+      
       {selectedUser && (
         <div
           className="modal show d-block"

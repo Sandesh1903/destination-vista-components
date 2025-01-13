@@ -20,7 +20,7 @@ const Settings = () => {
         <div className="card-body">
           <h5 className="mb-4">General Settings</h5>
 
-          {/* Website Name */}
+          
           <div className="mb-3">
             <label className="form-label">Website Name</label>
             <input
@@ -33,7 +33,7 @@ const Settings = () => {
             />
           </div>
 
-          {/* Contact Email */}
+          
           <div className="mb-3">
             <label className="form-label">Contact Email</label>
             <input
@@ -46,7 +46,7 @@ const Settings = () => {
             />
           </div>
 
-          {/* Default Currency */}
+          
           <div className="mb-3">
             <label className="form-label">Default Currency</label>
             <select
@@ -62,7 +62,7 @@ const Settings = () => {
             </select>
           </div>
 
-          {/* Timezone */}
+          
           <div className="mb-3">
             <label className="form-label">Timezone</label>
             <select
@@ -79,7 +79,7 @@ const Settings = () => {
             </select>
           </div>
 
-          {/* Save Button */}
+          
           <div className="text-end">
             <button
               className="btn btn-primary"

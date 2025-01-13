@@ -1,10 +1,10 @@
-// App.js
+
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Bar } from "react-chartjs-2";
 
 const WebsiteOperations = () => {
-  // Data for the bar chart
+  
   const chartData = {
     labels: ["Jan", "Feb", "Mar", "Apr"],
     datasets: [
@@ -40,7 +40,7 @@ const WebsiteOperations = () => {
     <div className="container mt-4">
       <h2 className="mb-4">Website Operations</h2>
       <div className="row">
-        {/* KPI Cards */}
+        
         <div className="col-md-3">
           <div className="card text-center">
             <div className="card-body">
@@ -79,7 +79,7 @@ const WebsiteOperations = () => {
         </div>
       </div>
 
-      {/* Chart Section */}
+      
       <div className="mt-5">
         <h4>Performance Overview</h4>
         <div style={{ height: "400px" }}>
