@@ -23,6 +23,7 @@ import Settings from "./components/superAdmin/Settings";
 import Notifications from "./components/superAdmin/Notifications";
 import Register from "./components/Register";
 import WebsiteOperations from "./components/superAdmin/WebsiteOperations";
+import { UserUpdate } from "./components/vendor/UserUpdate";
 
 // ReactDOM.render(<Dashboard />, document.getElementById("root"));
 // ReactDOM.render(<VendorDashboard />, document.getElementById("root"));
@@ -65,7 +66,7 @@ const App = () => {
 
 
 
-       
+       <UserUpdate/>
     </div>
   );
 };
