@@ -16,11 +16,13 @@ import TripUpdates from "./components/vendor/TripUpdates";
 import Wallet from "./components/vendor/Wallet";
 
 import { Container, Row, Col } from 'react-bootstrap';
-import Dashboard from "./components/superAdmin/WebsiteOperations";
+
 import VendorOperations from "./components/superAdmin/VendorOperations";
 import UserOperations from "./components/superAdmin/UserOperations";
 import Settings from "./components/superAdmin/Settings";
 import Notifications from "./components/superAdmin/Notifications";
+import Register from "./components/Register";
+import WebsiteOperations from "./components/superAdmin/WebsiteOperations";
 
 // ReactDOM.render(<Dashboard />, document.getElementById("root"));
 // ReactDOM.render(<VendorDashboard />, document.getElementById("root"));
@@ -28,7 +30,8 @@ import Notifications from "./components/superAdmin/Notifications";
 const App = () => {
   return (
     <div className="d-flex">
-       <Sidebar />
+       {/* <Sidebar /> */}
+
       {/* <Searchbar/> */}
       
       {/* <DashboardContent /> */}
@@ -50,11 +53,19 @@ const App = () => {
 
 
       {/* SuperAdmin */}
-      {/* <Dashboard/> */}
+     
+      
+    {/* <WebsiteOperations/> */}
       {/* <VendorOperations/> */}
-      <UserOperations/>
-      {/* <Settings/> */}
+      {/* <UserOperations/> */}
       {/* <Notifications/> */}
+
+      {/* <Register/> */}
+       {/* <Settings/> */}
+
+
+
+       
     </div>
   );
 };
