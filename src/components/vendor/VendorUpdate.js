@@ -1,37 +1,22 @@
 // import * as React from "react";
-// import { SimpleForm, TextInput, required, Edit, SelectInput } from "react-admin";
+// import { SimpleForm, TextInput, required, email, Edit } from "react-admin";
 
-// export const UserUpdate = () => (
-//   <Edit title="Edit User" resource="users">
+// export const VendorUpdate = () => (
+//   <Edit>
 //     <SimpleForm>
-//       <SelectInput
-//         source="category"
-//         validate={[required()]}
-//         choices={[
-//           { id: "0", name: "Super Admin" },
-//           { id: "1", name: "Subscriber" },
-//           { id: "2", name: "User" },
-//         ]}
-//         defaultValue="2" // Dummy default value
-//       />
-//       <TextInput source="firstName" validate={[required()]} defaultValue="John" />
-//       <TextInput source="lastName" validate={[required()]} defaultValue="Doe" />
-//       <TextInput source="referCode" validate={[required()]} defaultValue="ABC123" />
-//       <TextInput source="createdBy" validate={[required()]} defaultValue="Admin" />
-//       <TextInput source="updatedBy" validate={[required()]} defaultValue="Moderator" />
+//       <TextInput source="agencyTitle" validate={[required()]} />
+//       <TextInput source="email" validate={[required(), email()]} />
+//       <TextInput source="contactNumber" validate={[required()]} />
 //     </SimpleForm>
 //   </Edit>
 // );
 
 
-
-
-import * as React from "react";
-import { SimpleForm, TextInput, required, Edit, SelectInput } from "react-admin";
+import React, { FC } from "react";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 
-export const UserUpdate: React.FC = () => {
-  // Handle form submission
+const VendorUpdate: FC = () => {
+  // Handle Form Submission
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log("Form submitted");
@@ -39,27 +24,8 @@ export const UserUpdate: React.FC = () => {
 
   return (
     <Container className="mt-5">
-      <h4> User Edit </h4>
       <Row className="justify-content-center">
-        {/* Left Side - User Info */}
-        <Col md={4}>
-          <Card className="p-3 text-center shadow-sm">
-            <img
-              src=""
-              alt="User"
-              className="rounded-circle mx-auto mb-3"
-              width="100"
-            />
-            <h4>Raj</h4>
-            <p className="text-muted">Mumbai, Maharashtra</p>
-            <p className="text-muted">GTM-7</p>
-            <Button variant="link" className="text-primary">
-              Upload picture
-            </Button>
-          </Card>
-        </Col>
-
-        {/* Right Side - Profile Form */}
+        <h4>Vendor edit </h4>
         <Col md={6}>
           <Card className="p-4 shadow-sm">
             <h5>Profile</h5>
@@ -84,7 +50,11 @@ export const UserUpdate: React.FC = () => {
                 <Col md={6}>
                   <Form.Group className="mb-3">
                     <Form.Label>Email address *</Form.Label>
-                    <Form.Control type="email" defaultValue="raj@kumar.io" required />
+                    <Form.Control
+                      type="email"
+                      defaultValue="raj@kumar.io"
+                      required
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
@@ -126,8 +96,7 @@ export const UserUpdate: React.FC = () => {
   );
 };
 
-export default UserUpdate;
-
+export default VendorUpdate;
 
 
 
@@ -173,70 +142,34 @@ export default UserUpdate;
 // final
 
 
-
-
-
-// import {
-//   Create,
-//   SimpleForm,
-//   TextInput,
-//   required,
-//   email,
-//   PasswordInput,
-// } from "react-admin";
-// import { SelectInput } from "react-admin";
+// import * as React from "react";
+// import { Create, SimpleForm, TextInput, required, email } from "react-admin";
 // import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 
-// export const UserCreate = () => {
-//   return (
-//     // <Create sx={{ maxWidth: 400, margin: '0 auto', marginTop:2 }}>
-//     //   <SimpleForm>
-//     //     <SelectInput fullWidth
-//     //       source="category"
-//     //       validate={[required()]}
-//     //       choices={[
-//     //         { id: "0", name: "Super Admin" },
-//     //         { id: "1", name: "Subscriber" },
-//     //         { id: "2", name: "User" },
-//     //       ]}
-//     //     />
-//     //     <TextInput fullWidth source="firstName" validate={[required()]} />
-//     //     <TextInput fullWidth source="lastName" validate={[required()]} />
-//     //     <TextInput fullWidth source="email" validate={[required(), email()]} />
-//     //     <PasswordInput fullWidth source="password" validate={[required()]} />
-//     //     <TextInput fullWidth source="referCode" validate={[required()]} />
-//     //     <TextInput fullWidth source="createdBy" validate={[required()]} />
-//     //     <TextInput fullWidth source="updatedBy" validate={[required()]} />
-//     //   </SimpleForm>
-//     // </Create>
+// export const VendorCreate = () => (
+//   // <Create>
+//   //   <SimpleForm>
+//   //     {/* <ReferenceInput source="userId" reference="user" >
+//   //       <SelectInput optionText="email"  />
+//   //     </ReferenceInput> */}
+//   //     <TextInput source="userId" validate={[required()]} />
+//   //     <TextInput source="agencyTitle" validate={[required()]} />
+//   //     <TextInput source="email" validate={[required(), email()]} />
+//   //     <TextInput source="contactNumber" validate={[required()]} />
+//   //     <TextInput source="createdBy" validate={[required()]} />
+//   //     <TextInput source="updatedBy" validate={[required()]} />
+//   //   </SimpleForm>
+//   // </Create>
 
-//     <Container className="mt-5">
-//       <h4> User Edit </h4>
+
+//   <Container className="mt-5">
 //       <Row className="justify-content-center">
-//         {/* Left Side - User Info */}
-//         <Col md={4}>
-//           <Card className="p-3 text-center shadow-sm">
-//             <img
-//               src=""
-//               alt="User"
-//               className="rounded-circle mx-auto mb-3"
-//               width="100"
-//             />
-//             <h4>Raj</h4>
-//             <p className="text-muted">Mumbai, Maharashtra</p>
-//             <p className="text-muted">GTM-7</p>
-//             <Button variant="link" className="text-primary">
-//               Upload picture
-//             </Button>
-//           </Card>
-//         </Col>
-
-//         {/* Right Side - Profile Form */}
+//         <h4>Vendor Edit</h4>
 //         <Col md={6}>
 //           <Card className="p-4 shadow-sm">
 //             <h5>Profile</h5>
 //             <p className="text-muted">The information can be edited</p>
-//             <Form>
+//             <Form >
 //               <Row>
 //                 <Col md={6}>
 //                   <Form.Group className="mb-3">
@@ -256,7 +189,11 @@ export default UserUpdate;
 //                 <Col md={6}>
 //                   <Form.Group className="mb-3">
 //                     <Form.Label>Email address *</Form.Label>
-//                     <Form.Control type="email" defaultValue="raj@kumar.io" required />
+//                     <Form.Control
+//                       type="email"
+//                       defaultValue="raj@kumar.io"
+//                       required
+//                     />
 //                   </Form.Group>
 //                 </Col>
 //                 <Col md={6}>
@@ -295,5 +232,4 @@ export default UserUpdate;
 //         </Col>
 //       </Row>
 //     </Container>
-//   );
-// };
+// );
