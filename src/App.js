@@ -23,7 +23,14 @@ import Settings from "./components/superAdmin/Settings";
 import Notifications from "./components/superAdmin/Notifications";
 import Register from "./components/Register";
 import WebsiteOperations from "./components/superAdmin/WebsiteOperations";
-import { UserUpdate } from "./components/vendor/UserUpdate";
+import UserProfile from "./components/vendor/UserUpdate";
+import VendorUpdate from "./components/vendor/VendorUpdate";
+import UserUpdate from "./components/vendor/UserUpdate";
+// import PackageCreate from"./components/vendor/PackageCreate"
+import { ViewPackageDetails } from "./components/vendor/ViewPackageDetails";
+import MyLoginPage from "./components/MyLoginPage"
+
+
 
 // ReactDOM.render(<Dashboard />, document.getElementById("root"));
 // ReactDOM.render(<VendorDashboard />, document.getElementById("root"));
@@ -66,7 +73,13 @@ const App = () => {
 
 
 
-       <UserUpdate/>
+      {/* <UserUpdate/> */}
+      {/* <VendorUpdate/> */}
+      {/* <PackageCreate/> */}
+      {/* <ViewPackageDetails/> */}
+
+
+      <MyLoginPage/>
     </div>
   );
 };
